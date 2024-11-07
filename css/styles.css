@@ -348,6 +348,14 @@ address {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 1158px) {
+  .box-for-icons {
+    display: none;
+  }
+  .icon-antena-first {
+    display: none;
+  }
+}
 /* -------setion 3  ------- */
 .container {
   /* padding: 0 15px; */
@@ -544,7 +552,7 @@ address {
   border-bottom: 1px;
   border-left: 1px;
   border-right: 1px;
-  border: 1px solid #e7e9fc;
+
   border-top: none;
 }
 
@@ -1045,11 +1053,22 @@ address {
 }
 
 /* -------------media----------------- */
+
 @media screen and (min-width: 768px) {
   .picture-people-office {
     min-width: 768px;
   }
-
+  .order-message {
+    max-width: 768;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-ipad.jpg);
+  }
   .text-solution {
     max-width: 496px;
     display: flex;
@@ -1058,7 +1077,7 @@ address {
     font-size: 56px;
     margin-right: auto;
   }
-  .container {
+  .container-small {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -1181,15 +1200,25 @@ address {
   }
 }
 /* -------screen 1158--------- */
-@media screen and (max-width: 1158px) {
-  .box-for-icons {
-    display: none;
-  }
-  .icon-antena-first {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 1158px) {
+  .order-message {
+    min-width: 1158;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding: 32px 16px;
+  }
   /* header */
   .header-container {
     width: 1128px;
@@ -1210,12 +1239,6 @@ address {
   }
 
   /* section 2 */
-
-  .container {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
   .li-for-first-element {
     width: calc((100% - 72px) / 4);
   }
@@ -1232,18 +1255,15 @@ address {
   .wrap {
     width: 1128px;
     gap: 24px;
+    margin: 0 auto;
   }
   .section-futures {
     padding-top: 120px;
     padding-bottom: 120px;
-    justify-content: center;
+
+    margin: 0 auto;
   }
   /* section 3 */
-  .container {
-    padding: 0 15px;
-    padding: 32px 16px;
-    width: 1158px;
-  }
 
   .our-team {
     width: calc((100% - 72px) / 4);
@@ -1277,12 +1297,7 @@ address {
     width: 264px;
   }
   /* section 4 */
-  .container {
-    width: 1128px;
-    margin: 0 auto;
-    padding: 0 15px;
-    padding: 32px 16px;
-  }
+
   .wrap-three {
     margin: 0 auto;
   }
@@ -1291,12 +1306,12 @@ address {
     align-items: baseline;
     justify-content: left;
     gap: unset;
-    min-width: 1300px;
   }
 
   .section-four-container {
     padding-top: 120px;
     padding-bottom: 120px;
+    margin: 0 auto;
   }
 
   .our-team {
@@ -1310,8 +1325,6 @@ address {
     margin-bottom: 0 auto;
   }
   .list-our-portfolio {
-    /* margin: 0 auto; */
-
     gap: 48px 24px;
     width: 1128px;
     padding-bottom: 0px;
@@ -1339,7 +1352,6 @@ address {
     margin-left: 156px;
   }
   .container-two {
-    width: 1128px;
     display: flex;
     align-items: baseline;
     margin: 0 auto;
@@ -1360,8 +1372,5 @@ address {
   }
   .for-email {
     gap: 24px;
-  }
-  .container {
-    display: static;
   }
 }
