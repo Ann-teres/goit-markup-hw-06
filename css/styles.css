@@ -1317,6 +1317,7 @@ address {
 
   .footer-web {
     justify-content: left;
+    max-width: 264px;
   }
   .container-for-icons {
     margin-bottom: 0px;
