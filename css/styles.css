@@ -123,6 +123,7 @@ address {
   margin-right: 0;
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
 }
 .header-menu-options.current {
   position: relative;
@@ -147,6 +148,7 @@ address {
   flex-direction: row-reverse;
   flex-wrap: nowrap;
 }
+
 .wrap-one {
   display: flex;
   gap: 40px;
@@ -161,6 +163,7 @@ address {
   color: #434455;
   margin-left: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: none;
 }
 .contact-details:first-child:focus {
   color: #404bbf;
@@ -171,6 +174,59 @@ address {
 .header {
   /* padding-top: 24px;
   padding-bottom: 24px; */
+}
+/* .opener {
+  background-color: #fff;
+  border: 0px;
+}
+.menu-opener {
+  fill: #2f2f37;
+  gap: 3px;
+} */
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+  margin: 30px auto;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
 }
 /* -------- section 1 -----------*/
 .order-message {
@@ -1063,13 +1119,78 @@ address {
   .icon-antena-first {
     display: none;
   }
+  .burger-checkbox {
+    display: none;
+  }
 }
-@media screen and (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (-web-min-device-pixel-ratio: 2) {
+  .order-message {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-ipad.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
+  /* header */
+  .header-menu-options {
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    display: block;
+    align-items: center;
+    gap: 40px;
+    margin-right: 0;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact-details {
+    font-family: rototo;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    color: #434455;
+    margin-left: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-class {
+    font-style: normal;
+    margin-left: auto;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+  .wrap-one {
+    display: flex;
+    gap: 40px;
+  }
+  .contact-details {
+    font-family: rototo;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    color: #434455;
+    margin-left: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+  }
+  /* section 1 */
   .picture-people-office {
     min-width: 768px;
+  }
+  .wrap {
+    display: unset;
+    justify-content: right;
   }
   .order-message {
     max-width: 768;
@@ -1170,6 +1291,9 @@ address {
   }
 
   /* section footer  */
+  .footer-subscribe-container {
+    margin: 0px;
+  }
   .footer-section {
     padding: 0px;
     margin: 0 auto;
@@ -1177,10 +1301,12 @@ address {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 0px;
   }
   .container-one {
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
+    margin: 0px;
   }
 
   .footer-web {
@@ -1188,6 +1314,7 @@ address {
   }
   .container-for-icons {
     margin-bottom: 0px;
+    justify-content: center;
   }
   .social-media-footer {
     justify-content: left;
@@ -1212,15 +1339,13 @@ address {
     flex-flow: row;
     display: flex;
   }
-  .add {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 24px;
-  }
 }
 /* -------screen 1158--------- */
 
 @media screen and (min-width: 1158px) {
+  .burger-checkbox {
+    display: none;
+  }
   .order-message {
     min-width: 1158;
     background-repeat: no-repeat;
@@ -1368,6 +1493,7 @@ address {
   .container-one {
     margin-right: 120px;
     margin-left: 156px;
+    margin-bottom: 72px;
   }
   .container-two {
     display: flex;
@@ -1390,5 +1516,10 @@ address {
   }
   .for-email {
     gap: 24px;
+  }
+  .container-footer-small {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
