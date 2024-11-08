@@ -348,7 +348,7 @@ address {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 1158px) {
+@media screen and (max-width: 768px) {
   .box-for-icons {
     display: none;
   }
@@ -552,7 +552,7 @@ address {
   border-bottom: 1px;
   border-left: 1px;
   border-right: 1px;
-
+  border: 1px solid #e7e9fc;
   border-top: none;
 }
 
@@ -761,8 +761,10 @@ address {
   justify-content: center;
   align-items: center;
   background-color: #4d5ae5;
-  margin-top: 16px;
+
   margin-bottom: 96px;
+  margin: 0 auto;
+  margin-top: 16px;
 }
 .email-form {
   /* display: flex;
@@ -1053,6 +1055,14 @@ address {
 }
 
 /* -------------media----------------- */
+@media screen and (max-width: 1150px) {
+  .box-for-icons {
+    display: none;
+  }
+  .icon-antena-first {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .picture-people-office {
@@ -1212,6 +1222,7 @@ address {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+    margin-bottom: 0px;
   }
   .container {
     max-width: 1158px;
@@ -1241,12 +1252,14 @@ address {
   /* section 2 */
   .li-for-first-element {
     width: calc((100% - 72px) / 4);
+    margin-bottom: 0px;
   }
   .section-first-header {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     max-width: 1128;
+    justify-content: left;
   }
   .section-fist-description {
     max-width: 288px;
@@ -1255,11 +1268,10 @@ address {
   .wrap {
     width: 1128px;
     gap: 24px;
-    margin: 0 auto;
   }
   .section-futures {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 0 px;
 
     margin: 0 auto;
   }
@@ -1276,7 +1288,6 @@ address {
   .section-three {
     width: auto;
     justify-content: space-evenly;
-    padding: 120px 0;
     background-color: #f4f4fd;
   }
   .section-futures {
@@ -1330,6 +1341,7 @@ address {
     padding-bottom: 0px;
   }
   .portfolio-wrap {
+    border: 1px solid #e7e9fc;
     padding: 32px 16p;
   }
   .li-our-portfolio {
