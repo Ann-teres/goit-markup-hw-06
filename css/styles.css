@@ -1125,7 +1125,7 @@ address {
   .icon-antena-first {
     display: none;
   }
-  .burger-checkbox {
+  .burger {
     display: none;
   }
 }
@@ -1176,7 +1176,8 @@ address {
   }
   .wrap-one {
     display: flex;
-    gap: 40px;
+    align-items: center;
+    /* gap: 40px; */
   }
   .contact-details {
     font-family: rototo;
@@ -1355,9 +1356,6 @@ address {
 /* -------screen 1158--------- */
 
 @media screen and (min-width: 1158px) {
-  .burger-checkbox {
-    display: none;
-  }
   .order-message {
     min-width: 1158;
     background-repeat: no-repeat;
@@ -1379,6 +1377,9 @@ address {
   /* header */
   .header-container {
     width: 1128px;
+  }
+  .burger {
+    display: none;
   }
   /* section 1 */
   .picture-people-office {
