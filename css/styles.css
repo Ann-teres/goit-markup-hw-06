@@ -737,6 +737,9 @@ address {
   align-items: center;
   justify-content: center;
 }
+.container-footer-small {
+  margin: 0 auto;
+}
 .container-two {
   /* display: flex;
   align-items: baseline; */
@@ -777,6 +780,9 @@ address {
   height: 80px;
   /* margin-bottom: 16px; */
   /* margin-left: 80px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .paragraph-subscribe {
   font-weight: 500;
@@ -1318,6 +1324,10 @@ address {
   }
   .social-media-footer {
     justify-content: left;
+    max-width: 264px;
+  }
+  .ul-list-footer {
+    max-width: 264px;
   }
   .footer-subscribe-container {
     justify-content: left;
@@ -1327,6 +1337,7 @@ address {
   .paragraph-subscribe {
     justify-content: left;
     margin-left: 0px;
+    margin-bottom: 16px;
   }
   .subscribe-button {
     margin-top: 0px;
