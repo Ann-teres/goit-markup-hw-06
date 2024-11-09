@@ -677,7 +677,7 @@ address {
   max-width: 288px;
 }
 .footer-section {
-  font-family: raleway;
+  /* font-family: raleway; */
   background-color: #2e2f42;
   /* padding: 100px 0; */
   padding: 96px 0;
@@ -1318,7 +1318,10 @@ address {
     margin: 0px;
   }
   .container-two {
-    width: 500px;
+    max-width: 584px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
   .footer-section {
     padding: 0px;
@@ -1349,6 +1352,7 @@ address {
   }
   .ul-list-footer {
     max-width: 264px;
+    justify-content: flex-start;
   }
   .footer-subscribe-container {
     justify-content: left;
@@ -1359,17 +1363,22 @@ address {
     justify-content: left;
     margin-left: 0px;
     margin-bottom: 16px;
+    padding-left: 0px;
+    padding-bottom: 0px;
   }
   .subscribe-button {
     margin-top: 0px;
     margin-left: 24px;
   }
   .footer-descripton {
-    margin-bottom: 0px;
+    margin: unset;
   }
   .email-form {
     flex-flow: row;
     display: flex;
+  }
+  .footer-email-box {
+    width: 264px;
   }
 }
 /* -------screen 1158--------- */
@@ -1515,24 +1524,30 @@ address {
     flex: unset;
   }
   .paragraph-subscribe {
-    width: 264px;
+    /* width: 264px; */
+    padding-left: 0px;
   }
-  .footer-subscribe-container {
-    width: 553px;
-  }
+
   .footer-web {
     display: inline-flex;
   }
-
+  /* .container-footer-big {
+    max-width: 1158px;
+    gap: unset;
+    flex-wrap: nowrap;
+    display: flex;
+  } */
   .container-one {
     margin-right: 120px;
-    margin-left: 156px;
-    margin-bottom: 72px;
+    padding: 0 15px;
   }
   .container-two {
     display: flex;
     align-items: baseline;
     margin: 0 auto;
+    max-width: 1158px;
+    gap: unset;
+    flex-wrap: nowrap;
   }
   .container-for-icons {
     margin-bottom: 16px;
@@ -1541,8 +1556,9 @@ address {
     display: flex;
   }
   .footer-subscribe-container {
-    width: 453px;
     margin-left: 80px;
+    width: unset;
+    margin-bottom: 0px;
   }
   .email-form {
     display: flex;
