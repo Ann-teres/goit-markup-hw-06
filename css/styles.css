@@ -149,14 +149,14 @@ address {
   flex-wrap: nowrap;
 }
 .nav-container {
-  padding: 016px;
+  /* padding: 016px; */
 }
 .wrap-one {
   display: flex;
   gap: 40px;
 }
 .contact-details {
-  font-family: rototo;
+  font-family: roboto;
   font-style: normal;
   font-size: 16px;
   line-height: 150%;
@@ -392,18 +392,23 @@ address {
   flex-wrap: wrap;
 }
 .our-team {
-  margin-top: 120px;
-  margin-bottom: 72px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* margin-bottom: 72px; */
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
   /* width: calc((100% - 72px) / 4); */
+}
+.wrap-three {
+  gap: 0px;
+  margin-bottom: 0px;
 }
 .section-three {
   /* justify-content: space-evenly; */
   justify-content: center;
   /* padding: 120px 0; */
   padding-top: 96px;
-  padding-bottom: 48px;
+  padding-bottom: 93px;
   /* background-color: #f4f4fd; */
   background-color: #e7e9fc;
   min-width: 320;
@@ -1126,6 +1131,7 @@ address {
 
 @media screen and (min-width: 768px) {
   /* header */
+
   .nav-container {
     padding: 0px;
   }
@@ -1147,9 +1153,9 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact-details {
-    font-family: rototo;
+    font-family: roboto;
     font-style: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 150%;
     letter-spacing: 0.02em;
     font-style: normal;
@@ -1163,11 +1169,12 @@ address {
     height: 24px;
   }
   .contact-details {
-    font-family: rototo;
+    font-family: roboto;
+    font-weight: 400;
     font-style: normal;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
     font-style: normal;
     color: #434455;
     margin-left: auto;
@@ -1175,18 +1182,24 @@ address {
     display: flex;
   }
   .address-class {
-    display: flex;
-    align-items: center;
     margin: 0px;
-    padding: 16px 0;
+  }
+  .wrap-two {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
   .contact-detailes-container {
-    /* gap: 12px; */
     margin: 0px;
   }
   /* section 1 */
   .picture-people-office {
     min-width: 768px;
+    padding-bottom: 6px;
+  }
+  .wrap-two {
+    justify-content: space-between;
+    gap: 12px;
   }
   .wrap {
     display: unset;
@@ -1203,7 +1216,12 @@ address {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-ipad.jpg);
+
+    min-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
+
   .text-solution {
     max-width: 496px;
     display: flex;
@@ -1218,19 +1236,15 @@ address {
     margin-right: auto;
     margin: 0 auto;
   }
-  .order-message {
-    min-width: 768px;
-    padding-bottom: 112px;
-  }
+
   /* section 2 */
 
   .section-futures {
     margin: 0 auto;
   }
-
-  .order-message {
-    min-width: 768px;
-    padding-bottom: 112px;
+  .section-first-header {
+    display: flex;
+    justify-content: start;
   }
   .li-for-first-element {
     max-width: 736px;
@@ -1249,6 +1263,9 @@ address {
   .section-three {
     border: none;
   }
+  .wrap-three {
+    padding-top: 120px;
+  }
   .our-team-section {
     flex-wrap: wrap;
     margin-bottom: 64px;
@@ -1263,9 +1280,8 @@ address {
   /* section 4 */
   .section-four-container {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 27px;
     flex-direction: row;
-    padding-bottom: 0px;
   }
   .container {
     padding-left: 16px;
@@ -1277,7 +1293,7 @@ address {
   .list-our-portfolio {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 72px;
+    /* padding-bottom: 72px; */
     gap: 24px;
   }
   .double-items-wrap {
@@ -1389,7 +1405,7 @@ address {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    padding: 32px 16px;
+    padding: 16px;
     padding-bottom: 0px;
   }
   /* header */
@@ -1401,20 +1417,26 @@ address {
   .burger-menu {
     display: none;
   }
-  .wrap-two {
-    gap: 40px;
-    padding: 24px 0;
+  .address-class {
     display: flex;
-    justify-content: end;
+    justify-content: horizontal;
+  }
+  .contact-details {
+    font-size: 16px;
+    line-height: 150%;
   }
   /* section 1 */
+  .box-for-icons {
+    margin-bottom: 0px;
+    margin-bottom: 8px;
+  }
   .picture-people-office {
     max-width: 1440px;
   }
   .text-solution {
     max-width: 496px;
     margin-bottom: 48px;
-    display: flex;
+    font-size: 56px;
   }
   .order-message {
     max-width: 1440;
@@ -1422,22 +1444,37 @@ address {
     padding-top: 188px;
     padding-bottom: 188px;
   }
+  .wrap-two {
+    display: flex;
+    flex-direction: row;
 
-  /* section 2 */
-  .li-for-first-element {
-    width: calc((100% - 72px) / 4);
-    margin-bottom: 0px;
+    gap: 12px;
+  }
+  .section-fist-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    padding-left: 0px;
+    margin-bottom: 8px;
   }
   .section-first-header {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     max-width: 1128;
-    justify-content: left;
+    display: flex;
+    justify-content: start;
   }
+  /* section 2 */
+  .li-for-first-element {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 0px;
+  }
+
   .section-fist-description {
     max-width: 288px;
-    padding-left: 16px;
+    /* padding-left: 16px; */
   }
   .wrap {
     width: 1128px;
@@ -1445,6 +1482,7 @@ address {
   }
   .section-futures {
     padding-top: 120px;
+    padding-bottom: 120px;
     padding-bottom: 0 px;
 
     margin: 0 auto;
@@ -1458,17 +1496,17 @@ address {
     width: 1128px;
     display: flex;
     margin: 0 auto;
+    padding: 0px;
   }
   .section-three {
     width: auto;
     justify-content: space-evenly;
     background-color: #f4f4fd;
     border: none;
-  }
-  .section-futures {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+
   .our-team-section {
     width: calc((100% - 72px) / 4);
     width: 264px;
@@ -1489,8 +1527,8 @@ address {
   }
 
   .section-four-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 25px;
+    padding-bottom: 215px;
     margin: 0 auto;
   }
 
@@ -1521,6 +1559,9 @@ address {
   /* ---------footeR------------ */
   .footer-section {
     flex: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .paragraph-subscribe {
     /* width: 264px; */
@@ -1538,10 +1579,10 @@ address {
   .container-two {
     display: flex;
     align-items: baseline;
-    margin: 0 auto;
     max-width: 1158px;
-    gap: unset;
     flex-wrap: nowrap;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .container-for-icons {
     margin-bottom: 16px;
