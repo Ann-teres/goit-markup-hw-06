@@ -185,25 +185,11 @@ address {
   fill: #2f2f37;
   gap: 3px;
 } */
-.burger-checkbox {
-  position: absolute;
-  visibility: hidden;
-  visibility: visible;
-}
-.burger-menu.open .burger-line:nth-child(1) {
-  transform: rotate(45deg);
-  position: relative;
-  top: 8px;
-}
-
-.burger-menu.open .burger-line:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-menu.open .burger-line:nth-child(3) {
-  transform: rotate(-45deg);
-  position: relative;
-  top: -8px;
+.burger-menu {
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+  padding: 0px;
 }
 /* -------- section 1 -----------*/
 .order-message {
@@ -1143,6 +1129,9 @@ address {
   .nav-container {
     padding: 0px;
   }
+  .burger-menu {
+    display: none;
+  }
   .header-menu-options {
     font-family: roboto;
     font-weight: 500;
@@ -1189,11 +1178,11 @@ address {
     display: flex;
     align-items: center;
     margin: 0px;
+    padding: 16px 0;
   }
-  .contact-details {
+  .contact-detailes-container {
     /* gap: 12px; */
     margin: 0px;
-    height: 24px;
   }
   /* section 1 */
   .picture-people-office {
@@ -1409,7 +1398,7 @@ address {
     display: flex;
     justify-content: space-between;
   }
-  .burger {
+  .burger-menu {
     display: none;
   }
   .wrap-two {
