@@ -877,7 +877,7 @@ address {
   line-height: 2;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  width: 320px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   padding-left: 16px;
@@ -1621,6 +1621,7 @@ address {
   .our-team-section {
     width: calc((100% - 72px) / 4);
     width: 264px;
+    margin-bottom: unset;
   }
   .section-second-header {
     background-color: #f4f4fd;
@@ -1634,7 +1635,7 @@ address {
   /* section 4 */
 
   .wrap-three {
-    margin: 0 auto;
+    margin: 0px;
   }
 
   .section-four-container {
@@ -1651,7 +1652,8 @@ address {
     width: calc((100% - 72px) / 4);
   }
   .our-portfolio {
-    margin-bottom: 0 auto;
+    margin-bottom: unset;
+    padding: 120px 0;
   }
   .list-our-portfolio {
     gap: 48px 24px;
@@ -1665,7 +1667,7 @@ address {
   .li-our-portfolio {
     width: calc((100% - 48px) / 3);
     box-shadow: none;
-    margin-bottom: 0px;
+    margin-bottom: unset;
   }
 
   /* ---------footeR------------ */
@@ -1686,7 +1688,6 @@ address {
 
   .container-one {
     margin-right: 120px;
-    padding: 0 15px;
   }
   .container-two {
     display: flex;
@@ -1695,6 +1696,7 @@ address {
     flex-wrap: nowrap;
     margin-left: 0px;
     margin-right: 0px;
+    gap: unset;
   }
   .container-for-icons {
     margin-bottom: 16px;
